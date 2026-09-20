@@ -1,0 +1,387 @@
+Original source cell 1
+Data set loaded: 690pictures
+Normal sample size: 338, Number of cancer samples: 352
+Training set size: 552
+Validation set size: 138
+
+
+Original source cell 1
+Phase 1: Freeze all convolutional layers and train only the fully connected layers.
+
+==================================================
+Pre-trained CNN Architecture Information:
+==================================================
+Model Name: ResNet-18
+Total number of layers: 18 layers (including convolutional layers, batch normalization layers, and activation function layers)
+Parameter quantity: 11,308,354
+Trainable parameters: 131,842
+Input size: 224×224×3
+Output size: 2 (Binary Classification)
+==================================================
+使用CPU
+Training Layer: fc.1.weight
+Training Layer: fc.1.bias
+Training Layer: fc.4.weight
+Training Layer: fc.4.bias
+
+==================================================
+Training Configuration Information:
+==================================================
+Loss function: CrossEntropyLoss
+Optimizer: AdamW (lr=1e-4, weight_decay=1e-4)
+Learning Rate Scheduling: CosineAnnealingLR
+Number of training cycles: 25
+Early Stop Patience Value: 5
+==================================================
+
+
+Epoch 1/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.6995 Acc: 0.5507
+Verification Loss: 0.6228 Acc: 0.7101
+Model saved. Validation accuracy: 0.7101
+
+Epoch 2/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.6485 Acc: 0.6250
+Verification Loss: 0.5693 Acc: 0.8188
+Model saved. Validation accuracy: 0.8188
+
+Epoch 3/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.5826 Acc: 0.6975
+Verification Loss: 0.5190 Acc: 0.8406
+Model saved. Validation accuracy: 0.8406
+
+Epoch 4/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.5490 Acc: 0.7409
+Verification Loss: 0.4798 Acc: 0.8696
+Model saved. Validation accuracy: 0.8696
+
+Epoch 5/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.5258 Acc: 0.7609
+Verification Loss: 0.4474 Acc: 0.8551
+Early Stop Counter: 1/5
+
+Epoch 6/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.5350 Acc: 0.7446
+Verification Loss: 0.4213 Acc: 0.8623
+Early Stop Counter: 2/5
+
+Epoch 7/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.5127 Acc: 0.7591
+Verification Loss: 0.4025 Acc: 0.8768
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.8768
+
+Epoch 8/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.4446 Acc: 0.8080
+Verification Loss: 0.3388 Acc: 0.8841
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.8841
+
+Epoch 9/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.3644 Acc: 0.8623
+Verification Loss: 0.2877 Acc: 0.9130
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.9130
+
+Epoch 10/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.3012 Acc: 0.8931
+Verification Loss: 0.2427 Acc: 0.9348
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.9348
+
+Epoch 11/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.2163 Acc: 0.9420
+Verification Loss: 0.2092 Acc: 0.9420
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.9420
+
+Epoch 12/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.1989 Acc: 0.9257
+Verification Loss: 0.1870 Acc: 0.9493
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.9493
+
+Epoch 13/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.1450 Acc: 0.9638
+Verification Loss: 0.1611 Acc: 0.9565
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Model saved. Validation accuracy: 0.9565
+
+Epoch 14/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.1333 Acc: 0.9692
+Verification Loss: 0.1422 Acc: 0.9565
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Early Stop Counter: 1/5
+
+Epoch 15/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.1101 Acc: 0.9746
+Verification Loss: 0.1417 Acc: 0.9348
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Early Stop Counter: 2/5
+
+Epoch 16/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.0979 Acc: 0.9783
+Verification Loss: 0.1199 Acc: 0.9565
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Early Stop Counter: 3/5
+
+Epoch 17/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.0581 Acc: 0.9928
+Verification Loss: 0.1121 Acc: 0.9565
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Early Stop Counter: 4/5
+
+Epoch 18/25
+------------------------------
+
+
+Original source cell 1
+Training Loss: 0.0333 Acc: 1.0000
+Verification Loss: 0.1064 Acc: 0.9565
+Phase Two: Thaw the final two residual blocks for fine-tuning.
+Early Stop Counter: 5/5
+Early stop triggered, training halted
+
+
+Original source cell 1
+
+==================================================
+Final Evaluation Report:
+==================================================
+Confusion matrix:
+[[67  2]
+ [ 4 65]]
+
+Classification Report:
+                    precision    recall  f1-score   support
+
+            Normal       0.94      0.97      0.96        69
+Invasive carcinoma       0.97      0.94      0.96        69
+
+          accuracy                           0.96       138
+         macro avg       0.96      0.96      0.96       138
+      weighted avg       0.96      0.96      0.96       138
+
+accuracy: 0.9565
+sensitivity: 0.9420
+specificity: 0.9710
+precision: 0.9701
+==================================================
+
+
+Original source cell 3
+=== Begin validation set evaluation ===
+Use existing trained models
+
+Begin prediction on the validation set...
+Find 35 normal pictures
+Find 47 invasive carcinoma pictures
+
+total 82 pictures
+
+==================================================
+Validation Set Performance Report
+==================================================
+Accuracy: 0.9512 (78/82 )
+
+Confusion Matrix
+           Prediction normal  Prediction carcinoma
+Actually normal       32          3
+Actually carcinoma        1         46
+
+Detailed Indicators
+- Sensitivity (Recall): 0.9787 (The ability to accurately identify cancer)
+- Specificity: 0.9143 (The ability to correctly identify normal tissue)
+- Precision rate: 0.9388 (The proportion of samples predicted to have cancer that are actually cancerous)
+
+Classification Report:
+                        precision    recall  f1-score   support
+
+             Normal(N)       0.97      0.91      0.94        35
+Invasive carcinoma(IC)       0.94      0.98      0.96        47
+
+              accuracy                           0.95        82
+             macro avg       0.95      0.95      0.95        82
+          weighted avg       0.95      0.95      0.95        82
+
+
+
+Original source cell 5
+=== Begin testing set prediction ===
+Test Set Path: C:\Users\21267\Desktop\HW6testing
+The test set folder exists. Processing has begun....
+Found 149 pictures
+Top 10 files: ['UK_1.png', 'UK_2.png', 'UK_3.png', 'UK_4.png', 'UK_5.png', 'UK_6.png', 'UK_7.png', 'UK_8.png', 'UK_9.png', 'UK_10.png']
+Last 10 files: ['UK_150.png', 'UK_151.png', 'UK_152.png', 'UK_153.png', 'UK_154.png', 'UK_157.png', 'UK_159.png', 'UK_160.png', 'UK_161.png', 'UK_162.png']
+
+Begin predicting the test set...
+Processed 20/149 pictures
+Processed 40/149 pictures
+Processed 60/149 pictures
+Processed 80/149 pictures
+Processed 100/149 pictures
+Processed 120/149 pictures
+Processed 140/149 pictures
+have processed 149 pictures
+
+Predictive Statistics:
+- 0 (N): 59 pictures
+- 1 (IC): 90 pictures
+
+==================================================
+Prediction Result Sequence (0=Normal, 1=Invasive Cancer)
+==================================================
+1,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,1,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+
+Prediction results have been saved to: test_predictions.csv
+
+
+Original source cell 7
+=== Grad-CAM  ===
+Target Layer: Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+Find 2 normal pictures
+Find 2 invasive carcinoma pictures
+
+ 4 image was selected for visualization
+1. N_1.png (Normal)
+2. N_10.png (Normal)
+3. IC_1.png (Invasive Carcinoma)
+4. IC_10.png (Invasive Carcinoma)
+
+Generate Grad-CAM visualizations...
+
+Process images 1/4: N_1.png
+
+
+Original source cell 7
+
+Process images 2/4: N_10.png
+
+
+Original source cell 7
+
+Process images 3/4: IC_1.png
+
+
+Original source cell 7
+
+Process images 4/4: IC_10.png
+
+
+Original source cell 7
+
+============================================================
+Grad-CAM Analysis and Summary
+============================================================
+
+Label 1: N_1.png
+  True Category: N
+  Prediction Category: N (Confidence level: 67.88%)
+  Prediction correct: Y
+  Heatmap Statistics:
+    - Average Heat: 0.2501
+    - Maximum Heat: 0.9986
+
+Label 2: N_10.png
+  True Category: N
+  Prediction Category: N (Confidence level: 97.79%)
+  Prediction correct: Y
+  Heatmap Statistics:
+    - Average Heat: 0.2645
+    - Maximum Heat: 0.9986
+
+Label 3: IC_1.png
+  True Category: IC
+  Prediction Category: IC (Confidence level: 91.74%)
+  Prediction correct: Y
+  Heatmap Statistics:
+    - Average Heat: 0.1965
+    - Maximum Heat: 0.9949
+
+Label 4: IC_10.png
+  True Category: IC
+  Prediction Category: IC (Confidence level: 63.47%)
+  Prediction correct: Y
+  Heatmap Statistics:
+    - Average Heat: 0.1184
+    - Maximum Heat: 0.9972
+
+Save the comprehensive visualization results...
+Visualization results have been saved to: grad_cam_results.png
+
+============================================================
+Grad-CAM Visualization Summary
+============================================================
+The red area indicates the region of primary focus for the model.
+For normal tissue: The model should focus on regular cellular arrangement and intact glandular structures.
+For invasive carcinoma: The model should focus on irregular nuclei and areas of tissue invasion.
+
+=== Grad-CAM visualization completed ===

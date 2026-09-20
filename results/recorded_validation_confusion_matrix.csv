@@ -1,0 +1,3 @@
+actual_class,predicted_normal,predicted_invasive_carcinoma
+normal,32,3
+invasive_carcinoma,1,46

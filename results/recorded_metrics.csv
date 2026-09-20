@@ -1,0 +1,6 @@
+evaluation,metric,value,n_images
+course_provided_validation,accuracy,0.9512,82
+course_provided_validation,sensitivity_invasive_carcinoma,0.9787,82
+course_provided_validation,specificity_normal,0.9143,82
+course_provided_validation,precision_invasive_carcinoma,0.9388,82
+internal_split_last_epoch,accuracy,0.9565,138

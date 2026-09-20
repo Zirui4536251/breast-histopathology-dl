@@ -1,0 +1,1 @@
+ResNet-18 transfer learning for breast histopathology classification, with validation metrics, unlabeled-image prediction and Grad-CAM visualizations.

@@ -1,0 +1,10 @@
+# Original package versions were not recorded; this is not a locked environment.
+torch
+torchvision
+numpy
+pandas
+Pillow
+matplotlib
+scikit-learn
+tqdm
+jupyterlab

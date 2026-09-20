@@ -1,0 +1,14 @@
+{
+  "source_notebook_sha256": "c6cf8f80df6b36ade1b9b78082074e51ce5d60ed92ced9a48249dc0fa188c9dc",
+  "original_png_sha256": {
+    "training_history_original.png": "237784f1dbe75d6e5a997673052ab7beeb8184698adc93c9a984dceab9399ed4",
+    "validation_confusion_matrix_original.png": "b696d0fa3acc157c98e4e87be8b18966ed89620dc83bbfabddd0de277acbf592",
+    "grad_cam_example_1_original.png": "32eea7b6bcd2d190cece89e8682a1c811d9c23503d54e71ef503f6c2861d0d11",
+    "grad_cam_example_2_original.png": "8aaae30c15915407dcc00900c93185a00e0dbdb4c6d317ff691949fb79151d64",
+    "grad_cam_example_3_original.png": "af74ce3a5e913e4c213f03bfa21dcd6963ea9061133fd02f9c141814b9ef783d",
+    "grad_cam_example_4_original.png": "4f27f520677431c4bad541312ce0ecd935f2f92be4d206b7933a6e068b094dd2",
+    "grad_cam_examples_original.png": "53d1307f206c7dc89ac0f7335798f3f87eb5971f1984f6588d5fa35a2038e7ea"
+  },
+  "notebook_executed_during_revision": false,
+  "recorded_test_prediction_count": 149
+}
